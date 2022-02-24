@@ -1,0 +1,587 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>计算属性和侦听器 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="classyu-style-bang-ding.html" />
+    
+    
+    <link rel="prev" href="mo-ban-yu-fa.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1.html">
+            
+                <a href="../chapter1.html">
+            
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../ji-chu.html">
+            
+                <a href="../ji-chu.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="vueshi-li.html">
+            
+                <a href="vueshi-li.html">
+            
+                    
+                    Vue实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="mo-ban-yu-fa.html">
+            
+                <a href="mo-ban-yu-fa.html">
+            
+                    
+                    模板语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="ji-suan-shu-xing-he-zhen-ting-qi.html">
+            
+                <a href="ji-suan-shu-xing-he-zhen-ting-qi.html">
+            
+                    
+                    计算属性和侦听器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="classyu-style-bang-ding.html">
+            
+                <a href="classyu-style-bang-ding.html">
+            
+                    
+                    Class与Style绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="tiao-jian-xuan-ran.html">
+            
+                <a href="tiao-jian-xuan-ran.html">
+            
+                    
+                    条件渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="lie-biao-xuan-ran.html">
+            
+                <a href="lie-biao-xuan-ran.html">
+            
+                    
+                    列表渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="shi-jian-chu-li.html">
+            
+                <a href="shi-jian-chu-li.html">
+            
+                    
+                    事件处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="biao-dan-shu-ru-bang-ding.html">
+            
+                <a href="biao-dan-shu-ru-bang-ding.html">
+            
+                    
+                    表单输入绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="zu-jian-ji-chu.html">
+            
+                <a href="zu-jian-ji-chu.html">
+            
+                    
+                    组件基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../zu-jian.html">
+            
+                <a href="../zu-jian.html">
+            
+                    
+                    组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../zu-jian-zhu-ce.html">
+            
+                <a href="../zu-jian-zhu-ce.html">
+            
+                    
+                    组件注册
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >计算属性和侦听器</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x548C;&#x4FA6;&#x542C;&#x5668;">&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x548C;&#x4FA6;&#x542C;&#x5668;</h1>
+<h2 id="1&#x3001;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;">1&#x3001;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;</h2>
+<p>&#x6A21;&#x677F;&#x5185;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x5F88;&#x65B9;&#x4FBF;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;example&quot;</span>&gt;</span>
+  { { message.split(&apos;&apos;).reverse().join(&apos;&apos;) } }
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x5728;&#x6A21;&#x677F;&#x4E2D;&#x653E;&#x5165;&#x592A;&#x591A;&#x7684;&#x903B;&#x8F91;&#x4F1A;&#x8BA9;&#x6A21;&#x677F;&#x8FC7;&#x91CD;&#x4E14;&#x96BE;&#x4EE5;&#x7EF4;&#x62A4;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x5BF9;&#x4E8E;&#x590D;&#x6742;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;<strong>&#x8BA1;&#x7B97;&#x5C5E;&#x6027;</strong>&#x3002;</p>
+<h3 id="11&#x3001;&#x4F8B;">1.1&#x3001;&#x4F8B;</h3>
+<p>&#x5BF9;&#x4E8E;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;example&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Original message: &quot;&quot;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Computed reversed message: &quot;{ { reversedMessage } }&quot;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+<span class="hljs-keyword">new</span> Vue({
+  el: <span class="hljs-string">&apos;#example&apos;</span>,
+  data: {
+    message: <span class="hljs-string">&apos;Hello&apos;</span>
+  },
+  computed: {
+    <span class="hljs-comment">// &#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x7684; getter</span>
+    reversedMessage: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+      <span class="hljs-comment">// `this` &#x6307;&#x5411; vm &#x5B9E;&#x4F8B;</span>
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.message.split(<span class="hljs-string">&apos;&apos;</span>).reverse().join(<span class="hljs-string">&apos;&apos;</span>)
+    }
+  }
+})
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</p>
+<p><img src="../assets/1583292158898.png" alt=""></p>
+<p>&#x6B64;&#x5904;&#xFF0C;&#x58F0;&#x660E;&#x4E86;&#x4E00;&#x4E2A;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;<code>reversedMessage</code>&#x3002;&#x63D0;&#x4F9B;&#x7684;&#x51FD;&#x6570;&#x4F1A;&#x88AB;&#x7528;&#x4F5C;&#x5C5E;&#x6027;<code>vm.reversedMessage</code>&#x7684;getter&#x51FD;&#x6570;&#xFF0C;<code>vm.reversedMessage</code>&#x7684;&#x503C;&#x53D6;&#x51B3;&#x4E8E;<code>vm.message</code>&#x7684;&#x503C;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(vm.reversedMessage) <span class="hljs-comment">// =&gt; &apos;olleH&apos;</span>
+vm.message = <span class="hljs-string">&apos;Goodbye&apos;</span>
+<span class="hljs-built_in">console</span>.log(vm.reversedMessage) <span class="hljs-comment">// =&gt; &apos;eybdooG&apos;</span>
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x50CF;&#x7ED1;&#x5B9A;&#x666E;&#x901A;&#x5C5E;&#x6027;&#x4E00;&#x6837;&#x5728;&#x6A21;&#x677F;&#x4E2D;&#x7ED1;&#x5B9A;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x3002;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x7684;getter&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x526F;&#x4F5C;&#x7528;&#xFF0C;&#x66F4;&#x6613;&#x4E8E;&#x6D4B;&#x8BD5;&#x548C;&#x7406;&#x89E3;&#x3002;</p>
+<h3 id="12&#x3001;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x7F13;&#x5B58;-vs-&#x65B9;&#x6CD5;">1.2&#x3001;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x7F13;&#x5B58; VS &#x65B9;&#x6CD5;</h3>
+<p>&#x5176;&#x5B9E;&#xFF0C;&#x901A;&#x8FC7;&#x5728;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x8C03;&#x7528;<strong>&#x65B9;&#x6CD5;</strong>&#x4E5F;&#x53EF;&#x4EE5;&#x8FBE;&#x5230;&#x4E0E;<strong>&#x8BA1;&#x7B97;&#x5C5E;&#x6027;</strong>&#x540C;&#x6837;&#x7684;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;example&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Original message: &quot;{ { message } }&quot;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Computed reversed message: &quot;{ { reversedMessage() } }&quot;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+<span class="hljs-keyword">new</span> Vue({
+  el: <span class="hljs-string">&apos;#example&apos;</span>,
+  data: {
+    message: <span class="hljs-string">&apos;Hello&apos;</span>
+  },
+  methods: {
+    reversedMessage: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.message.split(<span class="hljs-string">&apos;&apos;</span>).reverse().join(<span class="hljs-string">&apos;&apos;</span>)
+    }
+  }
+})
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;<strong>&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x662F;&#x57FA;&#x4E8E;&#x5B83;&#x4EEC;&#x7684;&#x54CD;&#x5E94;&#x5F0F;&#x4F9D;&#x8D56;&#x8FDB;&#x884C;&#x7F13;&#x5B58;</strong>&#x7684;&#xFF0C;&#x76F8;&#x5173;&#x7684;&#x54CD;&#x5E94;&#x5F0F;&#x4F9D;&#x8D56;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x65F6;&#x624D;&#x4F1A;&#x91CD;&#x65B0;&#x6C42;&#x503C;&#x3002;&#x53EA;&#x8981;<code>message</code>&#x4E0D;&#x53D8;&#xFF0C;&#x591A;&#x6B21;&#x8BBF;&#x95EE;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;<code>reversedMessage</code>&#x4F1A;&#x8FD4;&#x56DE;&#x4E4B;&#x524D;&#x7F13;&#x5B58;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x800C;&#x4E0D;&#x4F1A;&#x518D;&#x6B21;&#x6267;&#x884C;getter&#x51FD;&#x6570;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x5982;&#x4E0B;&#x4F8B;&#x5B50;&#x4E2D;&#x7684;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x4E0D;&#x4F1A;&#x66F4;&#x65B0;&#xFF0C;&#x56E0;&#x4E3A;<code>Date.now()</code>&#x4E0D;&#x662F;&#x54CD;&#x5E94;&#x5F0F;&#x4F9D;&#x8D56;&#xFF1A;</p>
+<pre><code class="lang-js">computed: {
+  now: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">Date</span>.now()
+  }
+}
+</code></pre>
+<p>&#x7136;&#x800C;&#xFF0C;&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#x603B;&#x662F;&#x4F1A;&#x518D;&#x6B21;&#x6267;&#x884C;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x4F7F;&#x7528;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x8FD8;&#x662F;&#x65B9;&#x6CD5;&#x8981;&#x4F9D;&#x636E;&#x5E94;&#x7528;&#x573A;&#x666F;&#x800C;&#x5B9A;&#x3002;</p>
+<h3 id="13&#x3001;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;-vs-&#x4FA6;&#x542C;&#x5C5E;&#x6027;">1.3&#x3001;&#x8BA1;&#x7B97;&#x5C5E;&#x6027; VS &#x4FA6;&#x542C;&#x5C5E;&#x6027;</h3>
+<p>&#x4FA6;&#x542C;&#x5C5E;&#x6027;&#xFF08;<code>watch</code>&#xFF09;&#x7528;&#x6765;&#x89C2;&#x5BDF;&#x548C;&#x54CD;&#x5E94;Vue&#x5B9E;&#x4F8B;&#x7684;&#x6570;&#x636E;&#x53D8;&#x52A8;&#x3002;&#x901A;&#x5E38;&#x8F83;&#x597D;&#x7684;&#x505A;&#x6CD5;&#x662F;&#x4F7F;&#x7528;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x800C;&#x4E0D;&#x662F;&#x547D;&#x4EE4;&#x5F0F;&#x7684;&#x4FA6;&#x542C;&#x5C5E;&#x6027;&#x56DE;&#x8C03;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x4F7F;&#x7528;&#x4FA6;&#x542C;&#x5C5E;&#x6027;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;demo&quot;</span>&gt;</span>{ { fullName } }<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+<span class="hljs-keyword">new</span> Vue({
+  el: <span class="hljs-string">&apos;#demo&apos;</span>,
+  data: {
+    firstName: <span class="hljs-string">&apos;Foo&apos;</span>,
+    lastName: <span class="hljs-string">&apos;Bar&apos;</span>,
+    fullName: <span class="hljs-string">&apos;Foo Bar&apos;</span>
+  },
+  watch: {
+    firstName: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(val)</span> </span>{
+      <span class="hljs-keyword">this</span>.fullName = val + <span class="hljs-string">&apos; &apos;</span> + <span class="hljs-keyword">this</span>.lastName
+    },
+    lastName: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(val)</span> </span>{
+      <span class="hljs-keyword">this</span>.fullName = <span class="hljs-keyword">this</span>.firstName + <span class="hljs-string">&apos; &apos;</span> + val
+    }
+  }
+})
+</span></code></pre>
+<p>&#x4EE3;&#x7801;&#x6709;&#x4E9B;&#x5197;&#x4F59;&#xFF0C;&#x76F8;&#x6BD4;&#x4E4B;&#x4E0B;&#x4F7F;&#x7528;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x8981;&#x7B80;&#x6D01;&#x5F88;&#x591A;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;demo&quot;</span>&gt;</span>{ { fullName } }<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+<span class="hljs-keyword">new</span> Vue({
+  el: <span class="hljs-string">&apos;#demo&apos;</span>,
+  data: {
+    firstName: <span class="hljs-string">&apos;Foo&apos;</span>,
+    lastName: <span class="hljs-string">&apos;Bar&apos;</span>
+  },
+  computed: {
+    fullName: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.firstName + <span class="hljs-string">&apos; &apos;</span> + <span class="hljs-keyword">this</span>.lastName
+    }
+  }
+})
+</span></code></pre>
+<h3 id="14&#x3001;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x7684;setter">1.4&#x3001;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x7684;setter</h3>
+<p>&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x9ED8;&#x8BA4;&#x53EA;&#x6709;getter&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x9700;&#x8981;&#x65F6;&#x4E5F;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;setter&#xFF1A;</p>
+<pre><code class="lang-js">computed: {
+  fullName: {
+    <span class="hljs-comment">// getter</span>
+    get: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.firstName + <span class="hljs-string">&apos; &apos;</span> + <span class="hljs-keyword">this</span>.lastName
+    },
+    <span class="hljs-comment">// setter</span>
+    set: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">newValue</span>) </span>{
+      <span class="hljs-keyword">var</span> names = newValue.split(<span class="hljs-string">&apos; &apos;</span>)
+      <span class="hljs-keyword">this</span>.firstName = names[<span class="hljs-number">0</span>]
+      <span class="hljs-keyword">this</span>.lastName = names[names.length - <span class="hljs-number">1</span>]
+    }
+  }
+}
+</code></pre>
+<p>&#x8FD9;&#x6837;&#xFF0C;&#x5728;&#x8FD0;&#x884C;<code>vm.fullName=&apos;Kobe Braint&apos;</code>&#x65F6;&#xFF0C;setter&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#xFF0C;<code>vm.firstName</code>&#x548C;<code>vm.lastName</code>&#x4F1A;&#x88AB;&#x66F4;&#x65B0;&#x3002;</p>
+<h2 id="2&#x3001;&#x4FA6;&#x542C;&#x5668;">2&#x3001;&#x4FA6;&#x542C;&#x5668;</h2>
+<p>&#x4F7F;&#x7528;&#x4FA6;&#x542C;&#x5668;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x54CD;&#x5E94;&#x6570;&#x636E;&#x53D8;&#x5316;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x9700;&#x8981;&#x5728;&#x6570;&#x636E;&#x53D8;&#x5316;&#x65F6;&#x6267;&#x884C;&#x5F02;&#x6B65;&#x6216;&#x8005;&#x5F00;&#x9500;&#x6BD4;&#x8F83;&#x5927;&#x7684;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4FA6;&#x542C;&#x5668;&#x3002;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;watch-example&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+    Ask a yes/no question:
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&quot;question&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{ { answer } }<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+<span class="hljs-keyword">new</span> Vue({
+  el: <span class="hljs-string">&apos;#watch-example&apos;</span>,
+  data: {
+    question: <span class="hljs-string">&apos;&apos;</span>,
+    answer: <span class="hljs-string">&apos;I cannot give you an answer until you ask a question!&apos;</span>
+  },
+  watch: {
+    <span class="hljs-comment">// &#x5982;&#x679C; `question` &#x53D1;&#x751F;&#x6539;&#x53D8;&#xFF0C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5C31;&#x4F1A;&#x8FD0;&#x884C;</span>
+    question: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(newQuestion, oldQuestion)</span> </span>{
+      <span class="hljs-keyword">this</span>.answer = <span class="hljs-string">&apos;Waiting for you to stop typing...&apos;</span>
+      <span class="hljs-keyword">this</span>.debouncedGetAnswer()
+    }
+  },
+  created: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+    <span class="hljs-comment">// `_.debounce` &#x662F;&#x4E00;&#x4E2A;&#x901A;&#x8FC7; Lodash &#x9650;&#x5236;&#x64CD;&#x4F5C;&#x9891;&#x7387;&#x7684;&#x51FD;&#x6570;&#x3002;</span>
+    <span class="hljs-comment">// &#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x9650;&#x5236;&#x8BBF;&#x95EE; yesno.wtf/api &#x7684;&#x9891;&#x7387;</span>
+    <span class="hljs-comment">// AJAX &#x8BF7;&#x6C42;&#x76F4;&#x5230;&#x7528;&#x6237;&#x8F93;&#x5165;&#x5B8C;&#x6BD5;&#x624D;&#x4F1A;&#x53D1;&#x51FA;&#x3002;&#x60F3;&#x8981;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x5173;&#x4E8E;</span>
+    <span class="hljs-comment">// `_.debounce` &#x51FD;&#x6570; (&#x53CA;&#x5176;&#x8FD1;&#x4EB2; `_.throttle`) &#x7684;&#x77E5;&#x8BC6;&#xFF0C;</span>
+    <span class="hljs-comment">// &#x8BF7;&#x53C2;&#x8003;&#xFF1A;https://lodash.com/docs#debounce</span>
+    <span class="hljs-keyword">this</span>.debouncedGetAnswer = _.debounce(<span class="hljs-keyword">this</span>.getAnswer, <span class="hljs-number">500</span>)
+  },
+  methods: {
+    getAnswer: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+      <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.question.indexOf(<span class="hljs-string">&apos;?&apos;</span>) === <span class="hljs-number">-1</span>) {
+        <span class="hljs-keyword">this</span>.answer = <span class="hljs-string">&apos;Questions usually contain a question mark. ;-)&apos;</span>
+        <span class="hljs-keyword">return</span>
+      }
+      <span class="hljs-keyword">this</span>.answer = <span class="hljs-string">&apos;Thinking...&apos;</span>
+      <span class="hljs-keyword">var</span> vm = <span class="hljs-keyword">this</span>
+      axios.get(<span class="hljs-string">&apos;https://yesno.wtf/api&apos;</span>)
+        .then(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(response)</span> </span>{
+          vm.answer = _.capitalize(response.data.answer)
+        })
+        .catch(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(error)</span> </span>{
+          vm.answer = <span class="hljs-string">&apos;Error! Could not reach the API. &apos;</span> + error
+        })
+    }
+  }
+})
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>&#x672C;&#x4F8B;&#x4E2D;&#xFF0C;&#x4F7F;&#x7528;<code>watch</code>&#x9009;&#x9879;&#x8FDB;&#x884C;&#x4E86;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#xFF08;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;API&#xFF09;&#xFF0C;&#x9650;&#x5236;&#x6267;&#x884C;&#x64CD;&#x4F5C;&#x7684;&#x7684;&#x9891;&#x7387;&#xFF0C;&#x5E76;&#x5728;&#x83B7;&#x53D6;&#x6700;&#x7EC8;&#x7ED3;&#x679C;&#x4E4B;&#x524D;&#x8BBE;&#x7F6E;&#x4E2D;&#x95F4;&#x72B6;&#x6001;&#x3002;&#x8FD9;&#x4E9B;&#x90FD;&#x662F;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x65E0;&#x6CD5;&#x505A;&#x5230;&#x7684;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E24;&#x4E2A;&#x76F8;&#x5173;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4E00;&#x822C;&#x5982;&#x679C;&#x6709;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x76F4;&#x63A5;&#x8054;&#x7CFB;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x4F7F;&#x7528;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#xFF0C;&#x5982;&#x679C;&#x5173;&#x7CFB;&#x6BD4;&#x8F83;&#x590D;&#x6742;&#xFF0C;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;&#x4FA6;&#x542C;&#x5668;&#x3002;</p>
+<p>&#x9664;&#x4E86;<code>watch</code>&#x9009;&#x9879;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>vm.$watch</code> API&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="mo-ban-yu-fa.html" class="navigation navigation-prev " aria-label="Previous page: 模板语法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="classyu-style-bang-ding.html" class="navigation navigation-next " aria-label="Next page: Class与Style绑定">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"计算属性和侦听器","level":"1.3.3","depth":2,"next":{"title":"Class与Style绑定","level":"1.3.4","depth":2,"path":"ji-chu/classyu-style-bang-ding.md","ref":"ji-chu/classyu-style-bang-ding.md","articles":[]},"previous":{"title":"模板语法","level":"1.3.2","depth":2,"path":"ji-chu/mo-ban-yu-fa.md","ref":"ji-chu/mo-ban-yu-fa.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ji-chu/ji-suan-shu-xing-he-zhen-ting-qi.md","mtime":"2020-03-25T09:54:32.194Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-24T08:20:36.308Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
