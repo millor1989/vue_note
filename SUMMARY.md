@@ -11,9 +11,10 @@
   * [列表渲染](ji-chu/lie-biao-xuan-ran.md)
   * [事件处理](ji-chu/shi-jian-chu-li.md)
   * [表单输入绑定](ji-chu/biao-dan-shu-ru-bang-ding.md)
-  * [组件基础](/ji-chu/zu-jian-ji-chu.md)
+  * [组件基础](ji-chu/zu-jian-ji-chu.md)
 * [组件](zu-jian.md)
-  * [组件注册](zu-jian-zhu-ce.md)
+  * [组件注册](zu-jian/zu-jian-zhu-ce.md)
+* [问题](questions.md)
 
 
 

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>组件注册 · GitBook</title>
+        <title>问题 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -58,7 +58,7 @@
 
     
     
-    <link rel="prev" href="zu-jian.html" />
+    <link rel="prev" href="zu-jian/zu-jian-zhu-ce.html" />
     
 
     </head>
@@ -263,9 +263,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.4.1" data-path="zu-jian-zhu-ce.html">
+        <li class="chapter " data-level="1.4.1" data-path="zu-jian/zu-jian-zhu-ce.html">
             
-                <a href="zu-jian-zhu-ce.html">
+                <a href="zu-jian/zu-jian-zhu-ce.html">
             
                     
                     组件注册
@@ -278,6 +278,19 @@
     
 
             </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="questions.html">
+            
+                <a href="questions.html">
+            
+                    
+                    问题
+            
+                </a>
+            
+
             
         </li>
     
@@ -311,7 +324,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >组件注册</a>
+        <a href="." >问题</a>
     </h1>
 </div>
 
@@ -326,7 +339,29 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>&#x7EC4;&#x4EF6;&#x6CE8;&#x518C;</p>
+                                <p>&#x7ED9; input &#x8D4B;&#x503C;&#x4E4B;&#x540E;&#xFF0C;&#x65E0;&#x6CD5;&#x4FEE;&#x6539; input</p>
+<p><a href="https://www.cnblogs.com/huanhuan55/p/12302333.html" target="_blank">https://www.cnblogs.com/huanhuan55/p/12302333.html</a></p>
+<pre><code class="lang-js">&lt;el-input  v-model=<span class="hljs-string">&quot;student.name&quot;</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">el-input</span>&gt;</span>
+
+export default {
+  data () {
+    return {
+      student:{}
+    }
+  },
+  methods: {
+      update () {
+         this.student.name=&apos;&#x8389;&#x8389;&#x4E1D;&apos;
+    }
+  }
+}
+</span></code></pre>
+<p><strong>&#x539F;&#x56E0;</strong>&#xFF1A;vue&#x5B9E;&#x5217;&#x521B;&#x5EFA;&#x7684;&#x65F6;&#x5019; student &#x7684; name &#x5C5E;&#x6027;&#x540D;&#x5E76;&#x672A;&#x58F0;&#x660E;&#xFF0C;&#x56E0;&#x6B64; vue &#x5C31;&#x65E0;&#x6CD5;&#x7ED9;&#x5C5E;&#x6027;&#x6DFB;&#x52A0; <code>getter/setter</code>&#xFF0C;&#x4ECE;&#x800C;&#x5BFC;&#x81F4; student &#x5E76;&#x4E0D;&#x662F;&#x54CD;&#x5E94;&#x5F0F;&#x7684;</p>
+<p><strong>&#x89E3;&#x51B3;&#x529E;&#x6CD5;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x7ED9; student &#x8D4B;&#x521D;&#x59CB;&#x503C;  <code>sutdent:{name:&quot;&quot;}</code></li>
+<li><code>this.$set(this.student,&apos;name&apos;,&apos;&#x8389;&#x8389;&#x4E1D;&apos;)</code></li>
+</ul>
 
                                 
                                 </section>
@@ -354,7 +389,7 @@
 
             
                 
-                <a href="zu-jian.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 组件">
+                <a href="zu-jian/zu-jian-zhu-ce.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 组件注册">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -366,7 +401,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"组件注册","level":"1.4.1","depth":2,"previous":{"title":"组件","level":"1.4","depth":1,"path":"zu-jian.md","ref":"zu-jian.md","articles":[{"title":"组件注册","level":"1.4.1","depth":2,"path":"zu-jian-zhu-ce.md","ref":"zu-jian-zhu-ce.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"zu-jian-zhu-ce.md","mtime":"2020-03-12T09:53:56.094Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-24T08:20:36.308Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"问题","level":"1.5","depth":1,"previous":{"title":"组件注册","level":"1.4.1","depth":2,"path":"zu-jian/zu-jian-zhu-ce.md","ref":"zu-jian/zu-jian-zhu-ce.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"questions.md","mtime":"2023-06-07T05:36:16.502Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-01-15T02:02:17.030Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
